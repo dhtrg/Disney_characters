@@ -59,7 +59,7 @@ def retrieve_data_without_authentication():
         df = pd.read_json('disney.json', orient='index')
 
         #append the new dataframe to the initial dataframe
-        result_df = pd.concate(result_df,df)
+        result_df = pd.concat([result_df,df])
 
     #reset index of the initial dataframe
     result_df.reset_index(inplace=True)
