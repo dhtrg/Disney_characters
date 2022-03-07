@@ -71,7 +71,7 @@ def retrieve_data_without_authentication():
     result_df.dropna(how='all', axis=0, inplace=True)
 
     # drop these columns because they are not necessary
-    result_df.drop(columns=['index', '__v'], inplace=True)
+    result_df.drop(columns=['index'], inplace=True)
 
     # drop the duplicate rows
     result_df = result_df.drop_duplicates()
